@@ -1,34 +1,34 @@
 //
 // Created by AKASH KHANRA on 24/09/18.
 //
-#include <bits/stdc++.h>
+
 #include <iostream>
 using namespace std;
-int r=1;
-int recu(int x,int n/2)
+
+int recu(int x,int n)
 {
-    if(n==1)
+    int res=1;
+    while(n>0)
     {
-        return x;
+        if(n & 1) {
+            res = res * x;
 
-    }
-    if(n & 1)
-    {
-        t=recu(x,n/2);
-        t=t*t;
-    }
-    return(x,n/2);
 
+            n = n >> 1;
+            x = x * x;
+        }
+    }
+    return res;
 
 }
 
 int main()
 {
 
-    int a,x,z;
-    cin>>a;
+    int x,n;
     cin>>x;
-    recu(x,a/z);
+    cin>>n;
+    cout<<recu(x,n);
 
 }
 
