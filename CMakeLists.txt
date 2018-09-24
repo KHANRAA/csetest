@@ -3,4 +3,4 @@ project(csetest)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(csetest  "puspop inbuilt iwth rverse.cpp" "array to 2 stack.cpp")
+add_executable(csetest "mod calculation.cpp")
